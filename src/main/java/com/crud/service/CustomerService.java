@@ -41,7 +41,7 @@ public Customer updateCustomer(Long id,Customer customer) {
 		existingCustomer.setEmail(customer.getEmail());
 		existingCustomer.setName(customer.getName());
 		existingCustomer.setPhone(customer.getPhone());
-		existingCustomer.setImage(customer.getImage());
+//		existingCustomer.setImage(customer.getImage());
 
 		
 		

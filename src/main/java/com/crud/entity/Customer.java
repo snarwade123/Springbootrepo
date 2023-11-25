@@ -18,8 +18,8 @@ public class Customer {
 	private String name;
 	private String email;
 	private String phone;
-	@Lob
-	private Blob image;
+//	@Lob
+//	private Blob image;
 	public Customer() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -30,7 +30,7 @@ public class Customer {
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.image = image;
+//		this.image = image;
 	}
 	public Long getId() {
 		return id;
@@ -56,12 +56,12 @@ public class Customer {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public Blob getImage() {
-		return image;
-	}
-	public void setImage(Blob image) {
-		this.image = image;
-	}
+//	public Blob getImage() {
+//		return image;
+//	}
+//	public void setImage(Blob image) {
+//		this.image = image;
+//	}
 	
 	}
 	

@@ -1,0 +1,23 @@
+ body {
+    font-family: Arial, sans-serif;
+  }
+.profile-picture {
+    width: 150px; 
+     height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+
+  #file-input {
+    display: none; 
+   }
+  #upload-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+}

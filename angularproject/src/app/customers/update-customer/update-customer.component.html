@@ -1,0 +1,62 @@
+<!-- <body>
+  <script>
+    function loadImage(input) {
+      const file = input.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById('preview-image').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  </script> -->
+  <div>
+    <h3>Update Page</h3>
+    <div class="row">
+      <div class="col-sm-3">
+
+      </div>
+       <div class="col-sm-6">
+         <form [formGroup]="getCustomerForm"> 
+          <div class="card" style="width: 15rem;">
+            <div class="card" style="height: 300px;">
+
+               <img src="/assets/image/" class="card-img-top" alt="profile-picture">
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>  
+            </div>
+          </div>
+
+
+
+
+
+          <input type="file" id="file-input" accept="image/*" onchange="loadImage(this)">
+          <label for="file-input" id="upload-button">Upload Profile Picture</label>
+          <div class="mb-3">
+            <label class="form-label">Customer Name</label>
+            <input type="text" class="form-control" id="name" required formControlName="name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Customer Email</label>
+            <input type="email" class="form-control" id="email" required formControlName="email">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Customer Phone</label>
+            <input type="text" class="form-control" id="phone" required formControlName="phone">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-success" (click)="updateCustomer()">Update</button>
+          </div>
+           </form> 
+
+          <!-- <div class="col-sm-3"> 
+       
+       </div>
+
+        </div>
+    </div>
+ -->
